@@ -142,3 +142,7 @@
 .github_icon{
     background-image: url(IMG/Git_Hub_icon.png);
 }
+.tutels_icon{
+    background-image: url(IMG/turtle.png);
+    scale: 0.9;
+}

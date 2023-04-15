@@ -1,3 +1,4 @@
+/*!       Header       */
 .header_title{
     display: grid;
     grid: 100%/repeat(6, 1fr);
@@ -22,6 +23,7 @@
     transform: scale(1.5);
 
     background: linear-gradient(45deg, #00aeff, #a68eff);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
