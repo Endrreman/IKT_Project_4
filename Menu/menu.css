@@ -1,0 +1,55 @@
+/*!       General       */
+html, body{
+    box-sizing: border-box;
+    word-break: break-word;
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+p{
+    text-indent: 1rem;
+}
+
+/*     Scrollbar     */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*!       Header       */
+#header_ul{
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+}
+.header_icon{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+
+    margin-inline: 15px;
+
+    --icon_size: 35px;
+    height: var(--icon_size);
+    width: var(--icon_size);
+    padding-left: 1.5rem;
+
+    transition-duration: .5s;
+}
+.header_icon:hover{
+    height: calc( var(--icon_size) * 1.5);
+    width:  calc( var(--icon_size) * 1.5);
+}
+
+/*     Icons     */
+.google_drive_icon{
+    background-image: url(IMG/Google_Drive_icon.png);
+}
+.github_icon{
+    background-image: url(IMG/Git_Hub_icon.png);
+}

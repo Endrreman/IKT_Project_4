@@ -1,0 +1,25 @@
+Ubuntu betűtípus
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+    font-family: ubuntu;
+
+
+.header_title{
+    transition-duration: .5s;
+    font-size: 0%;
+    opacity: 0;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.header_title_span{
+    background-color: #cc0030;
+    border-radius: 10px;
+    padding: 0.2rem;
+}
+.header_icon:hover + .header_title{
+    font-size: 1rem;
+    opacity: 1;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+}
