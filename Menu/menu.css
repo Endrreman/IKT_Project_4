@@ -1,0 +1,30 @@
+.header_title{
+    display: grid;
+    grid: 100%/repeat(6, 1fr);
+    padding: 4em 40em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header_title .hover{
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.header_title h1{
+    font-size: 6rem;
+    color: transparent;
+    text-align: 0 1px 1px;
+    -webkit-text-stroke: 2px #a68eff;
+    text-shadow: none;
+    
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.header_title .hover:hover h1{
+    transform: scale(1.5);
+
+    background: linear-gradient(45deg, #00aeff, #a68eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    -webkit-text-stroke: 2px transparent;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
