@@ -1,8 +1,11 @@
 /*!       Header       */
 .header_title{
+    width: 35%;  /* Kisebb nézetnél fejebb kell venni */
+    margin: auto;
+
     display: grid;
     grid: 100%/repeat(6, 1fr);
-    padding: 4em 40em;
+    padding: 4em 1em;
     font-family: Arial, Helvetica, sans-serif;
 }
 .header_title .hover{

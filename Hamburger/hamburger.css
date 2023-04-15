@@ -5,14 +5,14 @@
     width: 50px;
     position: fixed;
     top: 5px;
-    right: 0;
+    right: 5px;
     cursor: pointer;
     opacity: 0;
 }
 .hamburger{
     position: fixed;
     top: 5px;
-    right: 0;
+    right: 5px;
     height: 40px;
     width: 40px;
     padding: 0.6rem;
