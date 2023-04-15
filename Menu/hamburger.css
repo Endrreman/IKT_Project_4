@@ -1,0 +1,128 @@
+/*!       Hamburger       */
+.toggler{
+    z-index:2;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hamburger{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.6rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*     Lines     */
+:root{
+    --line_height: 3px;
+    --line_apart: 12px;
+    --line_border_radius: 10px;
+}
+.hamburger > div{
+    position: relative;
+    top: 0;
+    left: 0;
+    background: white;
+    border-radius: var(--line_border_radius);
+
+    width: 70%;
+    height: var(--line_height);
+
+    transition: all  0.4s ease;
+}
+.hamburger > div::before,
+.hamburger > div::after{
+    content: '';
+    position: absolute;
+    top: calc(var(--line_apart) - (var(--line_apart) * 2));
+    background: white;
+    border-radius: var(--line_border_radius);
+
+    width: 100%;
+    height: var(--line_height);
+
+    transition: all  0.4s ease;
+}
+.hamburger > div::after{
+    top: var(--line_apart);
+}
+
+/*     Lines Transition    */
+.toggler:checked + .hamburger > div{
+    background: rgba(0,0,0,0);
+}
+.toggler:checked + .hamburger > div::before{
+    top: 0;
+    transform: rotate(45deg);
+    background: black;
+}
+.toggler:checked + .hamburger > div::after{
+    top: 0;
+    transform: rotate(135deg);
+    background: black;
+}
+
+/*     Menu    */
+.menu{
+    transition: all 0.4s ease;
+}
+
+/*     List    */
+.menu >  div > ul{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    visibility: hidden;
+    left: 4rem;
+}
+.toggler:checked ~ .menu > div > ul{
+    transition: visibility 0.4s ease;
+    transition-delay: 0.1s;
+    visibility: visible;
+}
+
+/*!       List       */
+#header_ul{
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+}
+.header_icon{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+
+    margin-inline: 15px;
+
+    --icon_size: 35px;
+    height: var(--icon_size);
+    width: var(--icon_size);
+    padding-left: 1.5rem;
+
+    transition: width 0.5s;
+    transition: height 0.5s;
+}
+.header_icon:hover{
+    height: calc( var(--icon_size) * 1.2);
+    width:  calc( var(--icon_size) * 1.2);
+}
+
+/*     Icons     */
+.google_drive_icon{
+    background-image: url(IMG/Google_Drive_icon.png);
+}
+.github_icon{
+    background-image: url(IMG/Git_Hub_icon.png);
+}
