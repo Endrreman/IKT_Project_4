@@ -3,16 +3,16 @@
     z-index:2;
     height: 50px;
     width: 50px;
-    position: absolute;
+    position: fixed;
     top: 5px;
-    left: 0;
+    right: 0;
     cursor: pointer;
     opacity: 0;
 }
 .hamburger{
-    position: absolute;
+    position: fixed;
     top: 5px;
-    left: 0;
+    right: 0;
     height: 40px;
     width: 40px;
     padding: 0.6rem;
@@ -58,18 +58,23 @@
 }
 
 /*     Lines Transitioned    */
+:root{
+    --line-after-bg-color: linear-gradient(45deg, #00aeff, #a68eff);
+}
 .toggler:checked + .hamburger > div{
     background: rgba(0,0,0,0);
+    width: 90%;
+    
 }
 .toggler:checked + .hamburger > div::before{
     top: 0;
     transform: rotate(45deg);
-    background: black;
+    background: var(--line-after-bg-color);
 }
 .toggler:checked + .hamburger > div::after{
     top: 0;
     transform: rotate(135deg);
-    background: black;
+    background: var(--line-after-bg-color);
 }
 
 /*     Menu    */
@@ -80,7 +85,7 @@
 /*!       List       */
 .menu >  div > ul{
     position: fixed;
-    left: 4rem;
+    right: 4rem;
     display: flex;
     flex-direction: row;
     visibility: hidden;
@@ -101,6 +106,7 @@
     margin-inline: 15px;
 
     --icon_size: 35px;
+
     height: var(--icon_size);
     width: var(--icon_size);
     padding-left: 1.5rem;
