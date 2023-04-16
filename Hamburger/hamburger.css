@@ -4,14 +4,14 @@
     height: 50px;
     width: 50px;
     position: fixed;
-    top: 5px;
+    top: 1rem;
     right: 5px;
     cursor: pointer;
     opacity: 0;
 }
 .hamburger{
     position: fixed;
-    top: 5px;
+    top: 1rem;
     right: 5px;
     height: 40px;
     width: 40px;
@@ -79,6 +79,14 @@
 .menu{
     transition: all 0.4s ease;
 }
+.asd{
+    height: 3rem;
+    padding-top: 0.75rem;
+
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
 
 /*!       List       */
 .menu >  div > ul{
@@ -94,23 +102,80 @@
     transition: visibility 0.4s ease;
     transition-delay: 0.1s;
     visibility: visible;
+    animation: slidedown 1s;
+}
+.toggler:not(:checked) ~ .menu > div > ul{
+    animation: slideup 1s reverse;
 }
 .toggler:checked ~ .menu > div > ul > li{
     animation: slidein 1s;
 }
+.toggler:not(:checked) ~ .menu > div > ul > li{
+    animation: slideout 1s reverse;
+}
+
 @keyframes slidein {
     0% {
         visibility: hidden;
         opacity: 0;
         transform: translateX(100%);
     }
-    20%{
+    30%{
+        visibility: hidden;
         opacity: 0;
     }
     100% {
         visibility: visible;
         opacity: 1;
         transform: translateX(0%);
+    }
+}
+@keyframes slideout {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    30%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes slidedown {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    20%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes slideup {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    20%{
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0%);
     }
 }
 .header_icon{
