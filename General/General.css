@@ -3,16 +3,22 @@ html, body{
     word-break: break-word;
     scroll-behavior: smooth;
 
-    height: 200%;     /* teszt  (alap: 100%)*/
+   /* teszt  (alap: 100%)*/
+    width: 100%;
     margin: 0;
     padding: 0;
 
-    background-color: #202020;
+    color: white;
 
     /*     Kiemelés / másolás     */
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+}
+canvas{
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 
 /*     Links     */
@@ -31,7 +37,7 @@ p{
     width: 15px;
 }
 ::-webkit-scrollbar-track{
-    background-color: rgb(255 255 255 / 10%);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 ::-webkit-scrollbar-thumb{
     border-radius: 20px;
