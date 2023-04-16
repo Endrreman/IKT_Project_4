@@ -79,13 +79,12 @@
 .menu{
     transition: all 0.4s ease;
 }
-.asd{
+.ul_bg{
     height: 3rem;
     padding-top: 0.75rem;
 
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.2);
-    
 }
 
 /*!       List       */

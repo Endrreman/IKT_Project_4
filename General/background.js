@@ -1,37 +1,34 @@
 var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 
-//making the canvas full screen
-c.height = window.innerHeight *2;
-c.width = window.innerWidth - 15;
+//screen size
+c.height = window.innerHeight;
+c.width = window.innerWidth; //-15 if tehre is a scrollbar
 
-//chinese characters - taken from the unicode charset
-//var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+//what characters play
+//all characters    var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
 var matrix = "01";
-//converting the string into an array of single characters
+
 matrix = matrix.split("");
 
-var font_size = 10;
-var columns = c.width/font_size; //number of columns for the rain
+var font_size = 10;     //font size
+var columns = c.width/font_size; //number of columns
 //an array of drops - one per column
 var drops = [];
-//x below is the x coordinate
-//1 = y co-ordinate of the drop(same for every drop initially)
-for(var x = 0; x < columns; x++)
-    drops[x] = 0; 
 
-//drawing the characters
-function draw()
+for(var x = 0; x < columns; x++)    //x coordinate start
+    drops[x] = 0;                   //y coordinate start of the first line
+
+function draw()     //drawing the characters
 {
-    //Black BG for the canvas
     //translucent BG to show trail
-    ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+    ctx.fillStyle = "rgba(0, 0, 0, 0.04)";          //BG color for the canvas
     ctx.fillRect(0, 0, c.width, c.height);
 
-    ctx.fillStyle = "rgba(166, 142, 255, 0.3)";//green text
-    ctx.font = font_size + "px arial";
+    ctx.fillStyle = "rgba(166, 142, 255, 0.3)";     //text color
+    ctx.font = font_size + "Courier New";           //font family
     //looping over drops
-    for(var i = 0; i < drops.length; i++)
+    for(var i = 0; i < drops.length; i++) //i++ -> i+= 10 spaceing between collums
     {
         //a random chinese character to print
         var text = matrix[Math.floor(Math.random()*matrix.length)];
@@ -44,8 +41,8 @@ function draw()
             drops[i] = 0;
 
         //incrementing Y coordinate
-        drops[i]++;
+        drops[i]++;     //i+= 10 spaceing between rows
     }
 }
 
-setInterval(draw, 35);
+setInterval(draw, 35); //seed of drops
