@@ -1,6 +1,8 @@
 var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 
+
+//document.body.scrollHeight
 //screen size
 c.height = window.innerHeight;
 c.width = window.innerWidth; //-15 if tehre is a scrollbar

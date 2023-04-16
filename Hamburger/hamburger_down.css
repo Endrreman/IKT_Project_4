@@ -5,14 +5,14 @@
     width: 50px;
     position: fixed;
     top: 1rem;
-    right: 5px;
+    right: 1.1rem;
     cursor: pointer;
     opacity: 0;
 }
 .hamburger{
     position: fixed;
     top: 1rem;
-    right: 5px;
+    right: 1.1rem;
     height: 40px;
     width: 40px;
     padding: 0.6rem;
@@ -80,7 +80,7 @@
     transition: all 0.4s ease;
 }
 .ul_bg{
-    height: 3rem;
+    width: 4rem;
     padding-top: 0.75rem;
 
     border-radius: 10px;
@@ -90,9 +90,10 @@
 /*!       List       */
 .menu >  div > ul{
     position: fixed;
-    right: 4rem;
+    right: 1rem;
+    top: 4rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     visibility: hidden;
     list-style: none;
     padding-inline-start: 0;
@@ -183,13 +184,14 @@
     background-size: contain;
     display: inline-block;
 
-    margin-inline: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
     --icon_size: 35px;
 
     height: var(--icon_size);
     width: var(--icon_size);
-    padding-left: 1.5rem;
+    padding-left: 1.8rem;
 
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
