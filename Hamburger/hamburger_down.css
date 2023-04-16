@@ -102,16 +102,16 @@
     transition: visibility 0.4s ease;
     transition-delay: 0.1s;
     visibility: visible;
-    animation: slidedown 1s;
-}
-.toggler:not(:checked) ~ .menu > div > ul{
-    animation: slideup 1s reverse;
-}
-.toggler:checked ~ .menu > div > ul > li{
     animation: slidein 1s;
 }
-.toggler:not(:checked) ~ .menu > div > ul > li{
+.toggler:not(:checked) ~ .menu > div > ul{
     animation: slideout 1s reverse;
+}
+.toggler:checked ~ .menu > div > ul > li{
+    animation: slidedown 1s;
+}
+.toggler:not(:checked) ~ .menu > div > ul > li{
+    animation: slideup 1s reverse;
 }
 
 @keyframes slidein {
