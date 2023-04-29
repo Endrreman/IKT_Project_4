@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="../General/IMG/cpu.png">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="../General/General.css">
-    <link rel="stylesheet" href="../Hamburger/hamburger_down.css">
+    <link rel="stylesheet" href="../Hamburger/hamburger.css">
     <!--Font family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
     <canvas id="c"></canvas>
     <script src="../General/background.js"></script>
     <header>
-        <!--Hamburger menu-->
+    <!--Hamburger menu-->
         <input type="checkbox" class="toggler">
         <div class="hamburger"><div></div></div>
         <div class="menu">
@@ -42,7 +42,7 @@
                 </ul>
             </div>
         </div>
-
+    <!--Title-->
         <div class="header_title">
             <div class="hover">
                 <h1>T</h1>
@@ -64,23 +64,25 @@
             </div>
         </div>
     </header>
-        <hr>
+        <!--<hr>-->
     <main>
-        <div class="main_div">
-            <h2>Neumann János 120. évfordlója</h2>
-            <p>Egy zseniális ember élete és hagyatéka a Neumann János iskolák által</p>
-        </div>
-        <div class="main_div">
-            <h2>Egy alaplap felépítése</h2>
-            <p>Minden amit tudni kell egy gép vázát alkotó lapról</p>
-        </div>
-        <div class="main_div">
-            <h2>Az Intel és az AMD csatája</h2>
-            <p>A háború két fél között ami sosem ér véget</p>
-        </div>
-        <div class="main_div">
-            <h2>Számétógépek hűtése és fűtése</h2>
-            <p>Minek akarsz egy számítógépet fűteni te i****a?</p>
+        <div class="grid-con">
+            <div class="click_div it1" onclick="location.href='../Neumann_120/mainneu.html'">
+                <h2>Neumann János 120. évfordlója</h2>
+                <p>Egy zseniális ember élete és hagyatéka a Neumann János iskolák által</p>
+            </div>
+            <div class="click_div it2" onclick="location.href='../Szakmai/Alaplapok/alaplapok.html'">
+                <h2>Egy alaplap felépítése</h2>
+                <p>Minden amit tudni kell egy gép vázát alkotó lapról</p>
+            </div>
+            <div class="click_div it3" onclick="location.href='../Szakmai/Intel vs AMD/intelvsamd.html'">
+                <h2>Az Intel és az AMD csatája</h2>
+                <p>A háború két fél között ami sosem ér véget</p>
+            </div>
+            <div class="click_div it4" onclick="location.href='../'">
+                <h2>Számétógépek hűtése és fűtése</h2>
+                <p>Minek akarsz egy számítógépet fűteni te i****a?</p>
+            </div>
         </div>
     </main>
 </body>

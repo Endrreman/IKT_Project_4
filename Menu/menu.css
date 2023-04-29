@@ -6,7 +6,7 @@
     display: grid;
     grid: 100%/repeat(6, 1fr);
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 4.5rem;
     padding-inline: 1em;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -53,11 +53,31 @@ main h2, p{
     font-family: 'Share Tech Mono', monospace;
     font-weight: 100;
 }
-.main_div{
-    width: 35%;
-
-    margin-left: 4rem;
-    margin-bottom: 3rem;
+.click_div{
+    cursor: pointer;
 }
 
-/*     Hover     */
+/*     Grid     */
+.grid-con {
+    display: grid;
+    width: 80%;
+    margin: auto;
+
+    grid-gap: 1rem;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 20rem 20rem;
+
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.grid-con > div {
+    background-color: rgba(255, 255, 255, .1);
+
+    transition: 0.5s;
+}
+.it1, .it4{
+    grid-column: span 2;
+}
+.grid-con > div:hover{
+    scale: 1.05;
+}
