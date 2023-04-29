@@ -212,3 +212,29 @@
 .home_icon{
     background-image: url(IMG/home.png);
 }
+
+/*     Tooltip     */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+/*     Tooltip text     */
+.tooltip .tooltip_txt {
+    position: absolute;
+    top: 57px;
+    right: -10px;
+    z-index: 1;
+
+    visibility: hidden;
+    width: 110px;
+    background: linear-gradient(45deg, #00aeff, #a68eff);
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+.tooltip:hover .tooltip_txt {
+    visibility: visible;
+}
