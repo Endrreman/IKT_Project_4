@@ -90,6 +90,7 @@
 /*!       List       */
 .menu >  div > ul{
     position: fixed;
+    top: 0;
     right: 4rem;
     display: flex;
     flex-direction: row;
@@ -207,4 +208,7 @@
 .tutels_icon{
     background-image: url(IMG/turtle.png);
     scale: 0.9;
+}
+.home_icon{
+    background-image: url(IMG/home.png);
 }
