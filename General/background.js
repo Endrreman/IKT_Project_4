@@ -19,7 +19,7 @@ var columns = c.width/font_size; //number of columns
 var drops = [];
 
 for(var x = 0; x < columns; x++)    //x coordinate start
-    drops[x] = 0;                   //y coordinate start of the first line
+    drops[x] = 100;                   //y coordinate start of the first line
 
 function draw()     //drawing the characters
 {
