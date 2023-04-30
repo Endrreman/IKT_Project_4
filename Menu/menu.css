@@ -42,31 +42,55 @@ main h2, p{
     font-family: 'Share Tech Mono', monospace;
     font-weight: 100;
 }
-.click_div{
-    cursor: pointer;
-}
 
 /*     Grid     */
 .grid-con {
     display: grid;
-    width: 80%;
+    width: 92rem;
     margin: auto;
 
     grid-gap: 1rem;
-    grid-template-columns: auto auto auto;
+    --grid-column: 32.5rem;
+    grid-template-columns: 25rem var(--grid-column) var(--grid-column);
     grid-template-rows: 20rem 20rem;
 
     background-color: rgba(255, 255, 255, .1);
 }
-
 .grid-con > div {
     background-color: rgba(255, 255, 255, .1);
 
     transition: 0.5s;
 }
-.it1, .it4{
+
+.it2, .it3{
     grid-column: span 2;
 }
 .grid-con > div:hover{
     scale: 1.05;
+}
+.click_div{
+    cursor: pointer;
+    padding: 1rem;
+    color: transparent;
+
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0);
+}
+.click_div:hover{
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .4);
+    color: white;
+}
+.it1{
+    background-image: url(IMG/neumann_janos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.it2{
+    background-image: url(IMG/alaplap.webp);
+    background-size: cover;
+}
+.it3{
+    background-image: url(IMG/intel-amd.jpg);
+    background-size: cover;
+    background-position: center;
 }
