@@ -9,7 +9,7 @@ html{
     display: grid;
     grid: 100%/repeat(6, 1fr);
     padding-top: 0;
-    padding-bottom: 4.5rem;
+    padding-bottom: 2rem;
     padding-inline: 1em;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -41,12 +41,12 @@ html{
 }
 
 /*!       Main       */
+hr{
+    margin-bottom: 2rem;
+}
 main h2, p{
     font-family: 'Share Tech Mono', monospace;
     font-weight: 100;
-}
-.hiddenY{
-    animation: hiddY 1s;
 }
 /*     Grid     */
 .grid-con {
@@ -85,67 +85,22 @@ main h2, p{
     color: white;
     opacity: 1;
 }
-.it1{
-    background-image: url(IMG/neumann_janos.jpg);
+
+/*     Grid BackGround     */
+.click_div{
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-
-    animation: hidd-X 1.5s;
+}
+.it1{
+    background-image: url(IMG/neumann_janos.jpg);
 }
 .it2{
     background-image: url(IMG/alaplap.webp);
-    background-size: cover;
-
-    animation: hiddX 1.5s;
+    background-position: top;
 }
 .it3{
     background-image: url(IMG/cpu2.png);
-    background-size: cover;
-    background-position: center;
-
-    animation: hidd-X 1.5s;
 }
 .it4{
     background-image: url(IMG/cooling.jpg);
-    background-size: cover;
-    background-position: center;
-
-    animation: hiddX 1.5s;
-}
-@keyframes hiddY {
-    0% {
-        transform: translateY(-50%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-@keyframes hidd-X {
-    0%{
-        opacity: 0;
-    }
-    50% {
-        transform: translateX(-25%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: .8;
-    }
-}
-@keyframes hiddX {
-    0%{
-        opacity: 0;
-    }
-    50% {
-        transform: translateX(25%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: .8;
-    }
 }

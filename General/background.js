@@ -47,4 +47,4 @@ function draw()     //drawing the characters
     }
 }
 
-setInterval(draw, 35); //seed of drops
+setInterval(draw, 35); //speed of drops

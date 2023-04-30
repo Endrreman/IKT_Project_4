@@ -1,0 +1,75 @@
+/*!       Hidden anims       */
+@keyframes hidd-Y {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes hidd-X {
+    0%{
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-25%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: .8;
+    }
+}
+@keyframes hiddX {
+    0%{
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(25%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: .8;
+    }
+}
+@keyframes hr_load {
+    0%{
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+/*   hr   */
+.hr_load{
+    animation: hr_load 1s;
+}
+
+/*!       Menu       */
+/*   Title   */
+.hiddenY{
+    animation: hidd-Y 1s;
+}
+/*   Grid   */
+.it1{
+    animation: hidd-X 1.5s;
+}
+.it2{
+    animation: hiddX 1.5s;
+}
+.it3{
+    animation: hidd-X 1.5s;
+}
+.it4{
+    animation: hiddX 1.5s;
+}
+
+/*!       Neu 120       */
+/*   Title   */
+.title_h1{
+    animation: hidd-Y 1s;
+}
