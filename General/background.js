@@ -24,10 +24,10 @@ for(var x = 0; x < columns; x++)    //x coordinate start
 function draw()     //drawing the characters
 {
     //translucent BG to show trail
-    ctx.fillStyle = "rgba(0, 0, 0, 0.04)";          //BG color for the canvas
+    ctx.fillStyle = "rgba(0, 0, 0, .04)";          //BG color for the canvas
     ctx.fillRect(0, 0, c.width, c.height);
 
-    ctx.fillStyle = "rgba(166, 142, 255, 0.3)";     //text color
+    ctx.fillStyle = "rgba(166, 142, 255, .5)";     //text color
     ctx.font = font_size + "Courier New";           //font family
     //looping over drops
     for(var i = 0; i < drops.length; i++) //i++ -> i+= 10 spaceing between collums
