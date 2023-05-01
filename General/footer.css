@@ -1,6 +1,7 @@
 footer{
     height: 20rem;
     align-items: center;
+    font-family: 'Share Tech Mono', monospace;
 
     background-color: rgb(10, 10, 10);
 }
@@ -17,21 +18,28 @@ footer{
     grid-gap: 1rem;
     grid: 100%/repeat(2, 1fr);
     grid-template-rows: 15rem;
-
-    background-color: rgba(255, 255, 255, .1);
 }
 .foot_grid_div {
     color: #a68eff;
+    padding-left: 2rem;
 
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .05);
+}
+.foot_grid_div span{
+    color: white;
+}
+.contact_ul{
+    margin-top: -1rem;
+    margin-left: -2rem;
+}
+.contact{
+    margin: 0;
 }
 
 /*     Col 1     */
-.col1{
-    padding-left: 2rem;
-}
 .tutels_glitch{
     margin-bottom: 0;
+    margin-top: 2rem;
     font-size: 3rem;
     letter-spacing: 10px;
 }
