@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../General/General.css">
     <link rel="stylesheet" href="../General/animations.css">
     <link rel="stylesheet" href="../General/glitch_anim.css">
+    <link rel="stylesheet" href="../General/footer.css">
     <link rel="stylesheet" href="../Hamburger/hamburger.css">
     <!--Own CSS-->
     <link rel="stylesheet" href="menu.css">
@@ -20,8 +21,10 @@
     <title>Főoldal</title>
 </head>
 <body>
-    <canvas id="c"></canvas>
-    <script src="../General/background.js"></script>
+    <div class="matrix_bg">
+        <canvas id="c"></canvas>
+        <script src="../General/background.js"></script>
+    </div>
     <header>
     <!--Hamburger menu-->
         <input type="checkbox" class="toggler" >
@@ -77,7 +80,7 @@
         <div class="grid-con">
             <div class="click_div it1" onclick="location.href='../Neumann_120/neu_120.html'">
                 <h2>Neumann János <br> 120. évfordlója</h2>
-                <br><br><br>
+                <br><br><br><br>
                 <p><i>Ha valaki nem hiszi, hogy a matematika egyszerű, az azért van, mert még nem jött rá, hogy milyen bonyolult az élet.</i></p>
                 <p style="text-align: right;"><i>Neumann János</i></p>
             </div>
@@ -87,7 +90,9 @@
             </div>
             <div class="click_div it3" onclick="location.href='../Szakmai/Intel vs AMD/intelvsamd.html'">
                 <h2>Az Intel és az AMD csatája</h2>
-                <p>A háború két fél között ami sosem ér véget</p>
+                <br><br><br><br><br><br><br>
+                <p><i>A state-of-the-art calculation requires 100 hours of CPU time on the state-of-the-art computer, independent of the decade.</i></p>
+                <p style="text-align: right;"><i>Edward Teller</i></p>
             </div>
             <div class="click_div it4" onclick="location.href='../'">
                 <h2>Számétógépek hűtése és fűtése</h2>
@@ -96,6 +101,22 @@
         </div>
     </main>
     <footer>
+        <div class="foot_grid">
+            <div class="foot_grid_div col1">
+                <h2 class="hero glitch layers tutels_glitch" data-text="TUTELS©"><span>TUTELS<sup style="font-size: 2rem;">©</sup></span></h2><sup></sup>
+                <p>Az oldalt készítette: <i class="hero glitch layers" data-text="Nagy Endre"><span>Nagy Endre</span></i></p>
+                <p>Egyéb csapattagok: 
+                    <i class="hero glitch layers" data-text="Harazin Noel"><span>Harazin Noel</span></i>, 
+                    <i class="hero glitch layers" data-text="Wolfram Csenge"><span>Wolfram Csenge</span></i> 
+                </p>
+            </div>
+            <div class="foot_grid_div col2">
+
+            </div>
+            <div class="foot_grid_div col3">
+
+            </div>
+        </div>
     </footer>
 </body>
 </html>

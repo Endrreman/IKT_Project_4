@@ -1,11 +1,8 @@
 .hero {
-    font-size: 2rem;
     font-family: 'Share Tech Mono', monospace;;
-    display: inline-block;
     color: #fff;
     z-index: 2;
-    letter-spacing: 10px;
-  
+
     /* Bright things in dark environments usually cast that light, giving off a glow */
     filter: drop-shadow(0 1px 3px);
 }
@@ -461,13 +458,6 @@
 .glitch::after {
   animation: paths 5s step-end infinite, opacity 5s step-end infinite,
     font 7s step-end infinite, movement 8s step-end infinite;
-}
-
-.hero-container {
-  position: relative;
-  margin-top: -2rem;
-  margin-bottom: -4rem;
-  text-align: center;
 }
 
 /*
