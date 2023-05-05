@@ -39,7 +39,7 @@
 
 /*!       Main       */
 hr{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 main h2, p{
     font-family: 'Share Tech Mono', monospace;
@@ -48,14 +48,14 @@ main h2, p{
 /*     Grid     */
 .grid-con {
     display: grid;
-    width: 82rem;
-    padding: 1rem;
+
     padding-bottom: 3.5rem;
     margin: auto;
 
+    width: 70%;
+    --grid_col_width: calc(100% / 3 - 0.666666rem);
     grid-gap: 1rem;
-    --grid-column: calc((82rem - 25rem - 2rem) / 2 );
-    grid-template-columns: 25rem var(--grid-column) var(--grid-column);
+    grid-template-columns: var(--grid_col_width) var(--grid_col_width) var(--grid_col_width);
     grid-template-rows: 20rem 20rem;
 }
 .grid-con > div {
@@ -101,4 +101,28 @@ main h2, p{
 }
 .it4{
     background-image: url(IMG/cooling.jpg);
+}
+
+/*!       Responsive       */
+/*     Grid     */
+@media screen and (max-width: 1200px){
+    .grid-con {
+        width: 80%;
+        --grid_col_width: calc(100% / 2 - 0.666666rem);
+        grid-template-columns: var(--grid_col_width) var(--grid_col_width);
+        grid-template-rows: 20rem 20rem;
+    }
+    .it2, .it3{
+        grid-column: span 1;
+    }
+}
+@media screen and (max-width: 750px){
+    .grid-con {
+        width: 80%;
+        grid-template-columns: 100%;
+        grid-template-rows: 20rem 20rem 20rem 20rem;
+    }
+    .it2, .it3{
+        grid-column: span 1;
+    }
 }
