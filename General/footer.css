@@ -28,9 +28,18 @@ footer{
 .foot_grid_div span{
     color: white;
 }
+.name_ul{
+    margin-top: -0.5rem;
+    margin-left: -0.5rem;
+}
 .contact_ul{
     margin-top: -1rem;
     margin-left: -2rem;
+    margin-bottom: 0.5rem;
+}
+.contact_ul_ul{
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
 }
 .contact{
     margin: 0;
