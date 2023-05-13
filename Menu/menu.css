@@ -74,6 +74,8 @@ main h2, p{
     scale: 1.05;
 }
 .click_div{
+    z-index: 0;
+
     cursor: pointer;
     padding: 1rem;
     color: transparent;
