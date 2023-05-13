@@ -1,10 +1,16 @@
 var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 
+var body = document.body,
+    html = document.documentElement;
 
-//document.body.scrollHeight
+var maxHeight = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+
 //screen size
-c.height = window.innerHeight;
+c.height = maxHeight;
+//c.height = window.innerHeight;
+
 c.width = window.innerWidth;
 
 //what characters play
@@ -19,7 +25,7 @@ var columns = c.width/font_size; //number of columns
 var drops = [];
 
 for(var x = 0; x < columns; x++)    //x coordinate start
-    drops[x] = 100;                   //y coordinate start of the first line
+    drops[x] = 10000;                   //y coordinate start of the first line
 
 function draw()     //drawing the characters
 {
