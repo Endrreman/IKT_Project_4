@@ -95,16 +95,24 @@ main h2, p{
     background-position: center;
 }
 .it1{
+    /*clip-path: polygon(0 70.00px,70.00px 0,100% 0,100% 100%,0 100%);*/
+
     background-image: url(IMG/neumann_janos.jpg);
 }
 .it2{
+    clip-path: polygon(0 0,calc(100% - 80.00px) 0,100% 80.00px,100% 100%,0 100%);
+
     background-image: url(IMG/alaplap.webp);
     background-position: top;
 }
 .it3{
+    clip-path: polygon(0 0,100% 0,100% 100%,60.00px 100%,0 calc(100% - 60.00px));
+    
     background-image: url(IMG/cpu2.png);
 }
 .it4{
+    /*clip-path: polygon(0 0,100% 0,100% calc(100% - 90.00px),calc(100% - 90.00px) 100%,0 100%);*/
+
     background-image: url(IMG/cooling.jpg);
 }
 
