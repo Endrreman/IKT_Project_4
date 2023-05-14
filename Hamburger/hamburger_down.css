@@ -216,7 +216,7 @@
     scale: 0.9;
 }
 .home_icon{
-    background-image: url(IMG/home.png);
+    background-image: url(IMG/house.png);
 }
 
 /*!       Tooltip       */
@@ -239,7 +239,8 @@
     font-family: 'Share Tech Mono', monospace;
     text-align: center;
     padding: 5px 0;
-    border-radius: 10px;
+    
+    clip-path: polygon(0 130.00px,130.00px 0,100% 0,100% calc(100% - 130.00px),calc(100% - 130.00px) 100%,0 100%);
 }
 .tooltip:hover .tooltip_txt {
     visibility: visible;

@@ -40,6 +40,16 @@ footer{
 .contact_ul_ul{
     margin-top: 0rem;
     margin-bottom: 0.5rem;
+
+    -webkit-user-select:text; /* Safari */
+    -ms-user-select: text; /* IE 10 and IE 11 */
+    user-select: text; /* Standard syntax */
+}
+.contact_a{
+    color: #a68eff;
+}
+.contact_a:hover{
+    color: #00aeff;
 }
 .contact{
     margin: 0;

@@ -1,4 +1,14 @@
 /*!       Hidden anims       */
+@keyframes hidd-Y_title {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 @keyframes hidd-Y {
     0% {
         transform: translateY(-50%);
@@ -13,7 +23,7 @@
     0%{
         opacity: 0;
     }
-    50% {
+    60% {
         transform: translateX(-25%);
         opacity: 0;
     }
@@ -26,7 +36,7 @@
     0%{
         opacity: 0;
     }
-    50% {
+    60% {
         transform: translateX(25%);
         opacity: 0;
     }
@@ -39,6 +49,9 @@
     0%{
         width: 0%;
     }
+    30%{
+        width: 0%;
+    }
     100% {
         width: 60%;
     }
@@ -46,26 +59,26 @@
 
 /*   hr   */
 .hr_load{
-    animation: hr_load 1s;
+    animation: hr_load 2s;
 }
 
 /*!       Menu       */
 /*   Title   */
 .hiddenY{
-    animation: hidd-Y 1s;
+    animation: hidd-Y_title 1s;
 }
 /*   Grid   */
 .it1{
-    animation: hidd-X 1.5s;
+    animation: hidd-X 3s;
 }
 .it2{
-    animation: hiddX 1.5s;
+    animation: hiddX 3s;
 }
 .it3{
-    animation: hidd-X 1.5s;
+    animation: hidd-X 3s;
 }
 .it4{
-    animation: hiddX 1.5s;
+    animation: hiddX 3s;
 }
 
 /*!       Neu 120       */
