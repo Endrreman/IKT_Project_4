@@ -36,3 +36,16 @@ img{
 h2{
     font-family: 'Barlow', sans-serif;
 }
+
+/**           --- WIP ---           */
+.para{ 
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 60%;
+    
+    background-color: rgb(15, 15, 15);
+    clip-path: polygon(0 0,calc(100% - 80.00px) 0,100% 80.00px,100% 100%,0 100%);
+}
+.para_p{
+    padding-left: 1rem;
+}
