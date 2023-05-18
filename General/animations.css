@@ -1,5 +1,5 @@
 /*!       Hidden anims       */
-@keyframes hidd-Y_title {
+@keyframes hidd-Y{
     0% {
         transform: translateY(-50%);
         opacity: 0;
@@ -9,9 +9,9 @@
         opacity: 1;
     }
 }
-@keyframes hidd-Y {
+@keyframes hiddY {
     0% {
-        transform: translateY(-50%);
+        transform: translateY(50%);
         opacity: 0;
     }
     100% {
@@ -56,16 +56,50 @@
         width: 60%;
     }
 }
+@keyframes footer_anim {
+    0% {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes footer_-anim {
+    0% {
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
+/*!       General       */
 /*   hr   */
 .hr_load{
     animation: hr_load 2s;
 }
 
+/*   footer   */
+.footer_load{
+    animation: footer_anim 1s;
+    opacity: 0;
+}
+.footer_-load{
+    animation: footer_-anim 1s;
+    opacity: 0;
+}
+.footer_load, .footer_-load[data-scroll="in"] {
+    opacity: 1;
+}
+
 /*!       Menu       */
 /*   Title   */
 .hiddenY{
-    animation: hidd-Y_title 1s;
+    animation: hidd-Y 1s;
 }
 /*   Grid   */
 .it1{

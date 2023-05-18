@@ -7,7 +7,7 @@
     <!--Icon-->
     <link rel="icon" type="image/x-icon" href="../General/IMG/cpu.png">
     <!--JS-->
-    <!--<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>           --- WIP ---           -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="../General/General.css">
     <link rel="stylesheet" href="../General/animations.css">
@@ -156,6 +156,24 @@
                 </ul>
             </div>
         </div>
+        <script>
+            ScrollOut({
+                targets: ".col1",
+                once: true,
+                onShown(el) {
+                    el.classList.add("footer_-load");
+                },
+                offset: .4
+            });
+            ScrollOut({
+                targets: ".col2",
+                once: true,
+                onShown(el) {
+                    el.classList.add("footer_load");
+                },
+                offset: .4
+            });
+        </script>
     </footer>
 </body>
 </html>
