@@ -70,7 +70,7 @@
 
         <h1 class="title_h1">Alaplapok felépítése</h1>
     </header>
-    <main>
+    <main class="animated_enter">
         <div> <!--Top part.-->
             <p>Az alaplapok (motherboard) a számítógépek legfőbb összekötő eleme, minden komponens rajta keresztül kommunikál a többivel. Egy olyan platform, amelyen számtalan csatlakozó megtalálható melyekbe a gép alkatrészeit csatlakoztatjuk. Az alaplapoknak sok formátuma (mérete) van, de a legelterjedtebbek az ATX, MATX és az ITX. Az alaplapok felépítése az évtizedek alatt sokat változott, nagyon sok régi komponens és csatlakozó eltűnt róluk és sok új megjelent rajtuk, ennek oka a nagy ütemű technológiai fejlődés.</p>
             <img src="IMG/oldboard.png" alt="oldboard"><!--*           --- WIP ---           -->
@@ -159,18 +159,6 @@
                 https://www.makeuseof.com/tag/cpu-socket-types-explained-from-socket-5-to-bga-makeuseof-explains/
             </p>
         </div>
-        <script>
-            Splitting();
-            ScrollOut({
-                targets: '.char',
-                onShown(el) {
-                    el.classList.add("enter_anim");
-                },
-                onHidden(el) {
-                    el.classList.remove("enter_anim");
-                }
-            });
-        </script>
     </main>
     <footer>
         <div class="foot_grid">
@@ -212,15 +200,8 @@
                 </ul>
             </div>
         </div>
-        <script>
-            ScrollOut({
-                targets: ".foot_grid",
-                once: true,
-                onShown(el) {
-                    el.classList.add("footer_load");
-                }
-            });
-        </script>
     </footer>
+    <!--JS-->
+    <script src="../../General/animations.js"></script>
 </body>
 </html>

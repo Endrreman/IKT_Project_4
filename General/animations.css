@@ -89,12 +89,12 @@
 
 /*!       General       */
 /*   text   */
-.char{
-    transform: translateY(-100%);
-    opacity: 0;
+.animated_enter .char{
+    margin-right: 1rem;
+    opacity: .3;
 }
-.enter_anim{
-    transform: translateY(0);
+.animated_enter .enter_anim{
+    margin-right: 0;
     opacity: 1;
     transition: all 0.25s calc(var(--char-index) * 0.08s);
 }
