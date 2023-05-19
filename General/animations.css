@@ -24,7 +24,7 @@
         opacity: 0;
     }
     60% {
-        transform: translateX(-25%);
+        transform: translateX(-10rem);
         opacity: 0;
     }
     100% {
@@ -37,7 +37,7 @@
         opacity: 0;
     }
     60% {
-        transform: translateX(25%);
+        transform: translateX(10rem);
         opacity: 0;
     }
     100% {
@@ -66,13 +66,17 @@
         opacity: 1;
     }
 }
-@keyframes footer_-anim {
+@keyframes scale {
     0% {
-        transform: translateY(-20%);
+        scale: 50%;
+        opacity: 0;
+    }
+    60% {
+        scale: 50%;
         opacity: 0;
     }
     100% {
-        transform: translateY(0);
+        scale: 1;
         opacity: 1;
     }
 }
@@ -90,13 +94,14 @@
 /*!       General       */
 /*   text   */
 .animated_enter .char{
-    margin-right: 1rem;
+    margin-left: 0.5rem;
     opacity: .3;
+
+    transition: all 0.2s calc(var(--char-index) * 0.02s);
 }
 .animated_enter .enter_anim{
-    margin-right: 0;
+    margin-left: 0;
     opacity: 1;
-    transition: all 0.25s calc(var(--char-index) * 0.08s);
 }
 
 
@@ -143,3 +148,7 @@
     animation: hidd-Y 1s;
 }
 
+/*!       Alaplapok       */
+.intro{
+    animation: scale 3s;
+}
