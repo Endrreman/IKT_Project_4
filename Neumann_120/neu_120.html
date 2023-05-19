@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Icon-->
     <link rel="icon" type="image/x-icon" href="../General/IMG/cpu.png">
+    <!--JS-->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="../General/General.css">
-    <link rel="stylesheet" href="../General/animations.css">
     <link rel="stylesheet" href="../General/glitch_anim_2.css">
     <link rel="stylesheet" href="../General/footer.css">
     <link rel="stylesheet" href="../Hamburger/hamburger.css">
+    <link rel="stylesheet" href="../General/animations.css">
     <!--Own CSS-->
     <link rel="stylesheet" href="neu_120.css">
     <!--Font family-->
@@ -138,6 +140,15 @@
                     </ul>
                 </ul>
             </div>
+            <script>
+                ScrollOut({
+                    targets: ".foot_grid",
+                    once: true,
+                    onShown(el) {
+                        el.classList.add("footer_load");
+                    }
+                });
+            </script>
     </footer>
 </body>
 </html>

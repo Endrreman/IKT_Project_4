@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Icon-->
     <link rel="icon" type="image/x-icon" href="../../General/IMG/cpu.png">
-    <!--JS-->
+    <!--ScrollOut-->
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <!--Spitting-->
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="../../General/General.css">
-    <link rel="stylesheet" href="../../General/animations.css">
     <link rel="stylesheet" href="../../General/glitch_anim_2.css">
     <link rel="stylesheet" href="../../General/footer.css">
+    <link rel="stylesheet" href="../../General/animations.css">
     <!--Hamburger CSS-->
     <link rel="stylesheet" media="(min-width: 900px)" href="../../Hamburger/hamburger.css">
     <link rel="stylesheet" media="(max-width: 900px)" href="../../Hamburger/hamburger_down.css">
@@ -73,71 +77,71 @@
         </div>
         <div class="main_para">
             <div> <!--Paragraphs.-->
-                 <h2>1. CPU foglalat:</h2>
-                 <p class="para_p">Ez a foglalat biztosítja a Processzor befogadására van. Több fajta Processzor foglalat is van, a két legelterjedtebb a LGA (land grid array) és a PGA (pin grid array), ez a Processzor gyártótól és a Processzor generációjától is függhet. Ezeknek a számozása attól függ, hogy hány kontakt pont található rajta pl.: LGA 2011 = 2011 kontakt pon</p>
+                <div data-splitting><h2>1. CPU foglalat:</h2></div>
+                <p class="para_p">Ez a foglalat biztosítja a Processzor befogadására van. Több fajta Processzor foglalat is van, a két legelterjedtebb a LGA (land grid array) és a PGA (pin grid array), ez a Processzor gyártótól és a Processzor generációjától is függhet. Ezeknek a számozása attól függ, hogy hány kontakt pont található rajta pl.: LGA 2011 = 2011 kontakt pon</p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>2. CPU VRM:</h2>
+                <div data-splitting><h2>2. CPU VRM:</h2></div>
                 <p>Ez egy olyan tranzisztorokból, tekercsekből és kondenzátorokból álló áramkör, mely stabilizálja és pontosan beállítja a feszültséget a Processzor számára. Ez az egység felel a Processzor tápellátásáért. Ennek az egységnek van egy 12V-os különálló csatlakozója mely lehet 4, 8, 12 és 16 tűs is, ez a Processzor áramfelvételétől függ.</p>
-                   </div>
-                   <div> <!--Paragraphs.-->
-                <h2>3. Memória foglalatok:</h2>
+            </div>
+            <div> <!--Paragraphs.-->
+                <div data-splitting><h2>3. Memória foglalatok:</h2></div>
                 <p>A legtöbb alaplap DIMM (dual in-line memory module) felépítésű Memóriákat használnak. A foglalat típusának megnevezése a DDR (double data rate), ennek jelenleg 5 generációja van a legújabb a DDR5. Kisebb alaplapokon SODIMM Memóriák lehetnek. Egy alaplapon általában 4 slot található, de vannak kisebb és olcsóbb alaplapok melyeken csak 2 slot van, de szerver alaplapokon lehet 8 slot is, ez a Processzortól is függ.</p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>4. Északi híd: </h2>
+                <div data-splitting><h2>4. Északi híd:</h2></div>
                 <p>Régebbi alaplapokon az Északi híd az alaplapra forrasztva helyezkedett el. Ennek feladata a Memória slot-ok és PCI/PCI Express slot-ok kezelése. Az Északi hidat és a Processzort a FSB (front side bus) köti össze. Az újabb alaplapokon ilyet már nem találunk mivel az Processzorba integrálják.</p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>5. Déli híd:</h2>
+                <div data-splitting><h2>5. Déli híd:</h2></div>
                 <p>A Déli híd az alaplaphoz van forrasztva. A Déli híd kezeli az adattárolókat, ezen felül az USB port-okat és emellett kisebb sebességű PCI/PCI Expressz sávokat is. Az ehhez kapcsolt eszközök válaszideje nagyobb, mint az északi hídhoz vagy a Processzorhoz csatolt eszközök, mivel távolabb helyezkedik el a Processzortól. Ez kezeli az integrált hálózati kártyát és a hangkártyát is.</p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>6. PCI Express foglalatok:</h2>
+                <div data-splitting><h2>6. PCI Express foglalatok:</h2></div>
                 <p>A PCI (Peripheral Component Interconnect) egy olyan szabványosított csatlakozó foglalat, amelybe számtalan fajta bővítőkártyát rakhatunk, ilyenek például a videokártyák, hangkártyák, hálózati vezérlők, RAID kártyák, Capture kártyák stb. Ennek 5 generációja van, a legújabb a PCIE 5.0, emellett 4 fajta típusa van, a PCIE 1x, PCIE 4x, PCIE 8x és a PCIE 16x.</p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>7. CMOS elem:</h2>
+                <div data-splitting><h2>7. CMOS elem:</h2></div>
                 <p>Ez az elem arra szolgál, hogy a gép megtartsa a BIOS beállításait, és hogy az óra folyamatosan tudjon járni a gépben. Ennek kivételével és újra behelyezésével tudjuk reset-elni a BIOS-t.</p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>8. PCI foglalatok</h2>
+                <div data-splitting><h2>8. PCI foglalatok</h2></div>
                 <p>A PCI a PCI Express elődje. Ez a csatlakozó már nagyon kevés modern alaplapon található meg, már szinte teljesen háttérbe szorult. A PCI Expresshez késpest sokkal lassabb kapcsolatot kínál, így a használata nagyon visszaszorult.</p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>9. SATA portok:</h2>
+                <div data-splitting><h2>9. SATA portok:</h2></div>
                 <p>A SATA (Serial ATA) egy olyan szabványosított csatlakozó melyet adattárolók (HDD, SSD) csatlakoztatására használunk. A SATA 2.0 3Gbps sebességgel, még a SATA 3.0 6Gbps sebességgel képes adatot átvinni. Az alaplapokon mérettől függően 4-8 db helyezkedik el, általában a Déli hídhoz bekötve, de vannak szerver alaplapok melyek rendelkezhetnek 10-16 SATA csatlakozóval is.</p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>10. PATA (IDE) port:</h2>
+                <div data-splitting><h2>10. PATA (IDE) port:</h2></div>
                 <p>A PATA (Paralell ATA) csatlakozóval manapság egyre kevésbé találkozunk, mivel nem biztosít nagy sebességű kapcsolatot és a csatlakozó nagyon nagy. Az alaplap a PATA meghajtóval úgynevezett Master, Slave kapcsolattal kommunikált. Az összeköttetést egy szalagkábel biztosította. </p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>11. 24 tűs ATX tápcsatlakozó</h2>
+                <div data-splitting><h2><h2>11. 24 tűs ATX tápcsatlakozó</h2></div>
                 <p>Ez a csatlakozó látja el az összes komponenst az alaplapon, kivéve a Processzort. Ezen a csatlakozón keresztül érkezik 3,3V; 5V és 12V. Emellet szerepet játszik a gép beindításában is, az alaplap parancsára ez ad áramot az összes komponensnek.</p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>12. I/O panel:</h2>
+                <div data-splitting><h2>12. I/O panel:</h2></div>
                 <p>Ezen a panelon található meg az sok a gépből kifelé kommunikáló csatlakozó, pl.: USB, LAN port, Audio jack, Serial port, Fire Wire, Thunderbolt stb. Ide lehet csatlakoztatni a perifériákat is.</p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>13. Integrált hangkártya:</h2>
+                <div data-splitting><h2><h2>13. Integrált hangkártya:</h2></div>
                 <p>Ez a modul felelős az alap hangkezelésért, az alaplapok általában három hangcsatlakozó van, kettő bemeneti és egy kimeneti: a headphone out, a mic és a line-in. Ez az egység dolgozza fel a hangokat, erősíti és küldi ki a kimenetre, vagy a bejövő hangot digitalizálja és továbbítja a gépnek.</p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>14. Ventilátor csatlakozó:</h2>
+                <div data-splitting><h2><h2>14. Ventilátor csatlakozó:</h2></div>
                 <p>Ezekhez a csatlakozókhoz bírunk kapcsolni ventilátorokat, melyek a gép hőmérsékletétől függően változtatják a fordulatszámukat. Kettő fajta ventilátor csatlakozó van, a szimpla 3 tűs csatlakozó, melynek sebességét az áramerősség változtatásával érhetünk el és van a 4 tűs mely a PWM (pulse width modulation) segítségével digitálisan irányítja a ventilátorok fordulatszámát.</p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>15. HD audio:</h2>
+                <div data-splitting><h2>15. HD audio:</h2></div>
                 <p>Ez a csatlakozó az előlapi hangcsatlakozók bekötésére használják. Ez a csatlakozó az integrált hangkártyához van bekötve.</p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>16. Előlapi vezérlő csatlakozó:</h2>
+                <div data-splitting><h2>16. Előlapi vezérlő csatlakozó:</h2></div>
                 <p>Ide bírjuk csatlakoztatni a visszajelző ledeket, bekapcsol és reset gombot. Ezen keresztül bírjuk a gépet beindítani és monitorozni a kihasználtságát.</p>
             </div>
             <div> <!--Paragraphs.-->
-                <h2>17. Belső USB 2.0 portok</h2>
+                <div data-splitting><h2>17. Belső USB 2.0 portok</h2></div>
                 <p>Ez a csatlakozó arra szolgál, ha csatlakoztatni akarunk egy plusz USB port-ot a gép előlapjára akkor ide bírjuk bedugni, ez a Déli hídhoz van bekötve. </p>
             </div>
         </div>
@@ -155,6 +159,18 @@
                 https://www.makeuseof.com/tag/cpu-socket-types-explained-from-socket-5-to-bga-makeuseof-explains/
             </p>
         </div>
+        <script>
+            Splitting();
+            ScrollOut({
+                targets: '.char',
+                onShown(el) {
+                    el.classList.add("enter_anim");
+                },
+                onHidden(el) {
+                    el.classList.remove("enter_anim");
+                }
+            });
+        </script>
     </main>
     <footer>
         <div class="foot_grid">
@@ -198,14 +214,7 @@
         </div>
         <script>
             ScrollOut({
-                targets: ".col1",
-                once: true,
-                onShown(el) {
-                    el.classList.add("footer_-load");
-                }
-            });
-            ScrollOut({
-                targets: ".col2",
+                targets: ".foot_grid",
                 once: true,
                 onShown(el) {
                     el.classList.add("footer_load");
