@@ -1,6 +1,7 @@
 //!         General
-//      text
 Splitting();
+
+//      text
 ScrollOut({
     targets: '.char',
     onShown(el) {
@@ -11,6 +12,7 @@ ScrollOut({
     },
     threshold: 0.99999,
 });
+
 //!         Footer
 ScrollOut({
     targets: ".foot_grid",
