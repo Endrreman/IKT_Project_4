@@ -53,14 +53,12 @@ h2{
 .para{
     margin: 2rem auto;
     padding: 1rem;
+    padding-bottom: 1rem;
     width: 60%;
     
     background-color: rgb(15, 15, 15);
     clip-path: polygon(0 40.00px,40.00px 0,100% 0,100% calc(100% - 40.00px),calc(100% - 40.00px) 100%,0 100%);
 }
-.main_para > div{
-    padding-bottom: 1rem;
-}
-.main_para > div > p{ 
+.para > p{ 
     padding-left: 1rem;
 }
