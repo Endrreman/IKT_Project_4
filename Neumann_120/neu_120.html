@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Icon-->
     <link rel="icon" type="image/x-icon" href="../General/IMG/cpu.png">
-    <!--JS-->
+    <!--ScrollOut-->
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <!--Spitting-->
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="../General/General.css">
     <link rel="stylesheet" href="../General/glitch_anim_2.css">
     <link rel="stylesheet" href="../General/footer.css">
-    <link rel="stylesheet" href="../Hamburger/hamburger.css">
     <link rel="stylesheet" href="../General/animations.css">
+    <!--Hamburger CSS-->
+    <link rel="stylesheet" media="(min-width: 900px)" href="../Hamburger/hamburger.css">
+    <link rel="stylesheet" media="(max-width: 900px)" href="../Hamburger/hamburger_down.css">
     <!--Own CSS-->
     <link rel="stylesheet" href="neu_120.css">
     <!--Font family-->
@@ -46,12 +52,14 @@
                             <span class="tooltip_txt">Gitt Hub</span>
                         </a>
                     </li>
+                    <!--
                     <li>
                         <a href="#" class="tooltip">
                             <i class="header_icon tutels_icon"></i>
                             <span class="tooltip_txt">About Us</span>
                         </a>
                     </li>
+                    -->
                     <li>
                         <a href="../Menu/menu.html" class="tooltip">
                             <i class="header_icon home_icon"></i>
@@ -158,15 +166,9 @@
                     </ul>
                 </ul>
             </div>
-            <script>
-                ScrollOut({
-                    targets: ".foot_grid",
-                    once: true,
-                    onShown(el) {
-                        el.classList.add("footer_load");
-                    }
-                });
-            </script>
+        </div>  
     </footer>
+    <!--JS-->
+    <script src="../../General/animations.js"></script>
 </body>
 </html>
