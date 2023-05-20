@@ -82,18 +82,36 @@
         <p>1928-as cikkében Neumann megfogalmazta a kétszemélyes nullaösszegű nem kooperatív játék egyensúlyát, és megfelelő feltevések mellett igazolta az egyensúly létezését. 1944-ben Oskar Morgensternnel közösen megjelent Theory of Games and Economic Behavior című könyvük, amelyben általánosította a fenti eredményt, valamint bevezette a kooperatív játékokat és az úgynevezett Neumann–Morgenstern féle hasznosságfüggvényt. A játékelméleti alkalmazhatóságot megkönnyítette Nash (1951) általánosítása n-személyes, tetszőleges hasznosságfüggvényű játékosra.</p>
         <h4>Von Neumann-architektúra</h4>
         <p>Neumann a második világháború idején dolgozta ki az architektúrát, ami létrehozta az általános célú digitális számítógépek alapját, amik a mai informatika alapjait képzik. </p>
-        <p>Az egységei az artimetikai-logikai egység, azaz a processzorok, a memória, a bemeneti és kimeneti egységek és a buszok. A processzor a számítógép központi feldolgozóegysége, ez a rész hajtja égi el a programokat és dolgozza fel az adatokat. A memória az a rész, ahol a számítógép az adatokat tárolja, a CPU által elérhető. A bemeneti és kimeneti eszközök segítségével kommunikál a felhasználó a számítógéppel, ilyen például az egér (bemeneti) vagy a monitor (kimeneti). A buszok olyan kommunikációs eszközök, amik lehetővé teszik az adatok átvitelét különböző számítógépes egységek között, például buszok által lehet a memóriához és a processzorhoz kapcsolódni. </p>
+        <p>Az egységei az <b>artimetikai-logikai egység</b>, azaz a processzorok, a memória, a bemeneti és kimeneti egységek és a buszok. A processzor a számítógép központi feldolgozóegysége, ez a rész hajtja égi el a programokat és dolgozza fel az adatokat. A memória az a rész, ahol a számítógép az adatokat tárolja, a CPU által elérhető. A bemeneti és kimeneti eszközök segítségével kommunikál a felhasználó a számítógéppel, ilyen például az egér (bemeneti) vagy a monitor (kimeneti). A buszok olyan kommunikációs eszközök, amik lehetővé teszik az adatok átvitelét különböző számítógépes egységek között, például buszok által lehet a memóriához és a processzorhoz kapcsolódni. </p>
         <p>Az architektúra legnagyobb előnye az, hogy lehetővé teszi az általános célú számítógépek előállítását, amelyek képesek bármilyen típusú program futtatására. </p>
         <h4>Neumann-elvek</h4>
         <p>Neumann János az 1945-ben publikált "First Draft of a Report on the Edvac" című művében írta le a számítógépek működési elveit, ezeket ismerjük ma Neumann-elvekként. Az elvei a következők voltak:</p>
         <ul>
-            <li>A számítógép legyen teljesen elektronikus, ne tartalmazzon mozgó alkatrészeket, mint például a relé.</li>
-            <li>Legyen univerzális, azaz lehessen úgy programozni, hogy bármilyen feladatot képes legyen elvégezni. </li>
-            <li>A bináris számrendszert használja, mivel a bináris számrendszert és a logikai műveleteket könnyű megvalósítani kétállapotú áramkörökkel. </li>
-            <li>tartalmazzon belső memóriát, ahol az adatokat és a programokat is egy helyen tárolja. Ez a tárolt program elve, ahol a számítógép gyorsabb működése érdekében egy gyorsan elérhető memóriát használunk. </li>
-            <li>Legyen soros utasítás végrehajtású, azaz az utasításokat sorban egymás után hajtsa végre. </li>
+        <li>A számítógép legyen <b>teljesen elektronikus</b>, ne tartalmazzon mozgó alkatrészeket, mint például a relé.</li>
+        <li>Legyen <b>univerzális</b>, azaz lehessen úgy programozni, hogy bármilyen feladatot képes legyen elvégezni. </li>
+        <li>A <b>bináris számrendszert</b> használja, mivel a bináris számrendszert és a logikai műveleteket könnyű megvalósítani kétállapotú áramkörökkel. </li>
+        <li>tartalmazzon<b> belső memóriát</b>, ahol az adatokat és a programokat is egy helyen tárolja. Ez a tárolt program elve, ahol a számítógép gyorsabb működése érdekében egy gyorsan elérhető memóriát használunk. </li>
+        <li>Legyen <b>soros</b> utasítás végrehajtású, azaz az utasításokat sorban egymás után hajtsa végre. </li>
         </ul>
         <p>Több, mint hetven évvel a Neumann-elvek megjelenése után a számítógépek túlnyomó többsége még mindig ezen elvek szerint működik. Néhány változás történt a működési elvekben a hetven év alatt, például a mai processzorok már lehetővé teszik a párhuzamos utasításvégrehajtást is. </p>
+        <h4>Programozható számítógépek</h4>
+        <p>Neumann János volt az egyik első, aki felismerte, hogy a számítógépek képesek <b>általános célú problémamegoldásra</b>, nem csak egy adott feladat végrehajtására. Ő segített kidolgozni az első olyan számítógépeket, amelyek programozhatók voltak, és képesek voltak különböző típusú problémák megoldására.</p>
+        <h4>Összefésülő rendezés</h4>
+        <p>Az összefésülő rendezés egy hatékony és stabil algoritmus a sorrendezésre. Az algoritmus lényege, hogy felosztja a rendezendő listát kisebb részekre, majd azokat egymás után összefésüli, miközben a részlisták elemeit megfelelő sorrendben helyezi el.</p>
+        <h5>Lépései</h5>
+        <ul>
+        <li>A rendezendő listát <b>felosztjuk</b> két egyenlő méretű részre, egészen addig, amíg a részlisták csak egy elemet tartalmaznak.</li>
+        <li><b>Rekurzívan alkalmazzuk</b> az összefésülő rendezést a két részlista minden részére. Ez az eljárás végigfut, amíg a részlisták már csak egy elemet tartalmaznak.</li>
+        <li>Az összefésülés fázisában a rendezett <b>részlistákat összefésüljük</b>. Két rendezett részlistát veszünk, és egyszerre haladunk rajtuk, összehasonlítva és elhelyezve az elemeket egy új listában a megfelelő sorrendben</li>
+        <li>Miután az összefésülés befejeződött, a rendezett lista kész. Ezt az eredményt <b>visszaadjuk</b>.</li>
+        </ul>
+        <p>Az összefésülő rendezés előnye, hogy stabilitása mellett hatékonyan rendez nagyobb adathalmazokat is, és jól skálázódik. Azonban az algoritmus igényel egy kiegészítő tárolót a rendezés során, ami növelheti az adatstruktúra térhasználatát.</p>
+        <h4>Lineáris programozás</h4>
+        <p>A lineáris programozás egy matematikai módszer, amely az optimalizálás területén használatos problémák megoldására szolgál. Az alapötlet az, hogy egy lineáris célfüggvényt és <b>lineáris korlátozásokat fogalmazunk meg</b> egy adott döntési probléma leírására, és az optimális megoldást keressük.</p>
+        <p>A lineáris programozás során a célfüggvényt és a korlátozásokat lineáris egyenletek és egyenlőtlenségek formájában fejezzük ki. A célfüggvény egy lineáris kombinációja a döntési változóknak, amelyet maximalizálni vagy minimalizálni szeretnénk. A korlátozások pedig a döntési változókra vonatkozó feltételek, amelyeket teljesíteni kell.</p>
+        <p>A programozás alapvetően két lépésből áll: a <b>modellezésből</b> és az <b>optimalizálásból</b>. A modellezés során a döntési problémát matematikailag kifejezzük a célfüggvény és a korlátozások segítségével. Ezután az optimalizálás lépése következik, amely során a célunk az optimális megoldás megtalálása a megadott korlátozások mellett.</p>
+        <p>Alkalmazása számos területen jelentős. Példák közé tartoznak a termelési tervezés, a logisztikai optimalizáció, a pénzügyi tervezés, az erőforrás-allokáció és az optimalizálási problémák általánosságban. A lineáris programozás módszerei és algoritmusai hatékonyak és jól kidolgozottak, és számos szoftvercsomag elérhető a problémák modellezésére és megoldására.</p>
+        <p>A lineáris programozás lehetőséget nyújt a hatékony döntéshozatalra és az erőforrások optimalizált felhasználására. Az algoritmusok segítségével a legjobb lehetséges megoldást kereshetjük, és értékelhetjük a különböző lehetőségek és korlátozások hatását a döntésekre.</p>
         <h2>Az iskolánk változásai</h2>
         <h3>Gonda Zsombor, egy volt neumannos tapasztalatai</h3>
         <p>Idén 35 éves iskolánk, a BMSZC Neumann János Informatikai Technikum, és ezek alatt az évek alatt természetesen rengeteg változott. Három évvel ezelőtt vezették be a technikumokat, előtte BMSZC Neumann János Számítástechnikai Szakgimnáziumnak hívták az iskolát. Ekkor még a tanítás se olyan volt, mint ma. </p>
