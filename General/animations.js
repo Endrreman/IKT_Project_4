@@ -21,3 +21,15 @@ ScrollOut({
         el.classList.add("footer_load");
     }
 });
+
+ScrollOut({
+    targets:".nav",
+    scrollingElement: ".para",
+    onShown: function(el) {
+        el.classList.add("feher");
+    },
+    onHidden(el) {
+        el.classList.remove("feher");
+    },
+    threshold: 0.5
+});

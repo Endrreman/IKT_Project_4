@@ -33,14 +33,21 @@ hr{
 main{
     width: 80%;
     margin: auto;
-
+    font-family: 'Nunito', sans-serif;
 }
 
 img{
     width: 20rem;
 }
-h2{
+h2, h3, h4, h5{
     font-family: 'Barlow', sans-serif;
+}
+h3{
+    padding-left: 1rem;
+}
+p{ 
+    padding-inline: 2rem;
+    text-align: justify;
 }
 
 .intro{
@@ -64,9 +71,6 @@ h2{
 .para-2{
     width: 100%;
 }
-.para > p{ 
-    padding-left: 1rem;
-}
 
 .fix_bg{
     background-attachment: fixed;
@@ -74,7 +78,7 @@ h2{
     background-position: center;
     background-size: contain;
     
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .5);
 }
 .fix_bg-1 {
     background-image:url(IMG/neumann_janos_gyerekkora.jpg);
