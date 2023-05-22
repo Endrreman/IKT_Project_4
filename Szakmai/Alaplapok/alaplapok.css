@@ -30,8 +30,10 @@ hr{
     margin-bottom: 2rem;
 }
 main{
-    width: 90%;
+    width: 75%;
+    float: left;
     margin: auto;
+    font-family: 'Nunito', sans-serif;
 }
 
 img{

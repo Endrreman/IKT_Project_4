@@ -31,6 +31,16 @@ var tanul = document.getElementById("nav_tanul");
 var iskolank = document.getElementById("nav_iskolank");
 
 //*     alaplap
+var foglalat = document.getElementById("nav_foglalat");
+var vrm = document.getElementById("nav_vrm");
+var foglalat = document.getElementById("nav_foglalat");
+var foglalat = document.getElementById("nav_foglalat");
+var foglalat = document.getElementById("nav_foglalat");
+var foglalat = document.getElementById("nav_foglalat");
+var foglalat = document.getElementById("nav_foglalat");
+var foglalat = document.getElementById("nav_foglalat");
+var foglalat = document.getElementById("nav_foglalat");
+var foglalat = document.getElementById("nav_foglalat");
 
 ScrollOut({
     targets:"#nav-1",
