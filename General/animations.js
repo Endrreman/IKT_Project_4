@@ -24,33 +24,36 @@ ScrollOut({
 
 //!         Nav
 
+//*     neu_120
 var csalad = document.getElementById("nav_csalad");
 var iskola = document.getElementById("nav_iskola");
 var tanul = document.getElementById("nav_tanul");
 var iskolank = document.getElementById("nav_iskolank");
 
+//*     alaplap
+
 ScrollOut({
-    targets:"#csalad",
+    targets:"#nav-1",
     onShown() {
         csalad.classList.add("active");
     },
     onHidden() {
         csalad.classList.remove("active");
     },
-    threshold: 0.6,
+    threshold: 0.3,
 });
 ScrollOut({
-    targets:"#iskola",
+    targets:"#nav-2",
     onShown() {
         iskola.classList.add("active");
     },
     onHidden() {
         iskola.classList.remove("active");
     },
-    threshold: 0.6,
+    threshold: 0.3,
 });
 ScrollOut({
-    targets:"#tanul",
+    targets:"#nav-3",
     onShown() {
         tanul.classList.add("active");
     },
@@ -60,12 +63,12 @@ ScrollOut({
     threshold: 0.3,
 });
 ScrollOut({
-    targets:"#iskolank",
+    targets:"#nav-4",
     onShown() {
         iskolank.classList.add("active");
     },
     onHidden() {
         iskolank.classList.remove("active");
     },
-    threshold: 0.6,
+    threshold: 0.3,
 });
