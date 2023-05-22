@@ -30,7 +30,7 @@ var iskola = document.getElementById("nav_iskola");
 var tanul = document.getElementById("nav_tanul");
 var iskolank = document.getElementById("nav_iskolank");
 
-//*     alaplapvrm" hr
+//*     alaplap
 var foglalat = document.getElementById("nav_foglalat");
 var vrm = document.getElementById("nav_vrm");
 var memoria = document.getElementById("nav_memoria");
@@ -42,12 +42,12 @@ var pci = document.getElementById("nav_pci");
 var sata = document.getElementById("nav_sata");
 var pata = document.getElementById("nav_pata");
 var atx = document.getElementById("nav_atx");
-var foglalat = document.getElementById("nav_i-o");
-var foglalat = document.getElementById("nav_hang");
-var foglalat = document.getElementById("nav_vent");
-var foglalat = document.getElementById("nav_audio");
-var foglalat = document.getElementById("nav_elol");
-var foglalat = document.getElementById("nav_usb");
+var i_o = document.getElementById("nav_i_o");
+var hang = document.getElementById("nav_hang");
+var audio = document.getElementById("nav_vent");
+var audio = document.getElementById("nav_audio");
+var elol = document.getElementById("nav_elol");
+var usb = document.getElementById("nav_usb");
 
 ScrollOut({
     targets:"#nav-1",
