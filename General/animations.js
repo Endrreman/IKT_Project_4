@@ -22,14 +22,50 @@ ScrollOut({
     }
 });
 
+//!         Nav
+
+var csalad = document.getElementById("nav_csalad");
+var iskola = document.getElementById("nav_iskola");
+var tanul = document.getElementById("nav_tanul");
+var iskolank = document.getElementById("nav_iskolank");
+
 ScrollOut({
-    targets:".nav",
-    scrollingElement: ".para",
-    onShown: function(el) {
-        el.classList.add("feher");
+    targets:"#csalad",
+    onShown() {
+        csalad.classList.add("active");
     },
-    onHidden(el) {
-        el.classList.remove("feher");
+    onHidden() {
+        csalad.classList.remove("active");
     },
-    threshold: 0.5
+    threshold: 0.6,
+});
+ScrollOut({
+    targets:"#iskola",
+    onShown() {
+        iskola.classList.add("active");
+    },
+    onHidden() {
+        iskola.classList.remove("active");
+    },
+    threshold: 0.6,
+});
+ScrollOut({
+    targets:"#tanul",
+    onShown() {
+        tanul.classList.add("active");
+    },
+    onHidden() {
+        tanul.classList.remove("active");
+    },
+    threshold: 0.3,
+});
+ScrollOut({
+    targets:"#iskolank",
+    onShown() {
+        iskolank.classList.add("active");
+    },
+    onHidden() {
+        iskolank.classList.remove("active");
+    },
+    threshold: 0.6,
 });

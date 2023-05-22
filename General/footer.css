@@ -1,5 +1,7 @@
 footer{
     height: 20rem;
+    width: 100%;
+    float: left;
     align-items: center;
     font-family: 'Share Tech Mono', monospace;
 

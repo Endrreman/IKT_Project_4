@@ -28,10 +28,10 @@ h1{
 hr{
     margin-top: -1rem;
     margin-bottom: 2rem;
-    width: 80%;
 }
 main{
-    width: 80%;
+    width: 75%;
+    float: left;
     margin: auto;
     font-family: 'Nunito', sans-serif;
 }
