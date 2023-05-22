@@ -30,25 +30,34 @@ var iskola = document.getElementById("nav_iskola");
 var tanul = document.getElementById("nav_tanul");
 var iskolank = document.getElementById("nav_iskolank");
 
-//*     alaplap
+//*     alaplapvrm" hr
 var foglalat = document.getElementById("nav_foglalat");
 var vrm = document.getElementById("nav_vrm");
-var foglalat = document.getElementById("nav_foglalat");
-var foglalat = document.getElementById("nav_foglalat");
-var foglalat = document.getElementById("nav_foglalat");
-var foglalat = document.getElementById("nav_foglalat");
-var foglalat = document.getElementById("nav_foglalat");
-var foglalat = document.getElementById("nav_foglalat");
-var foglalat = document.getElementById("nav_foglalat");
-var foglalat = document.getElementById("nav_foglalat");
+var memoria = document.getElementById("nav_memoria");
+var hid = document.getElementById("nav_hid");
+var del = document.getElementById("nav_del");
+var pci_e = document.getElementById("nav_pci_e");
+var cmos = document.getElementById("nav_cmos");
+var pci = document.getElementById("nav_pci");
+var sata = document.getElementById("nav_sata");
+var pata = document.getElementById("nav_pata");
+var atx = document.getElementById("nav_atx");
+var foglalat = document.getElementById("nav_i-o");
+var foglalat = document.getElementById("nav_hang");
+var foglalat = document.getElementById("nav_vent");
+var foglalat = document.getElementById("nav_audio");
+var foglalat = document.getElementById("nav_elol");
+var foglalat = document.getElementById("nav_usb");
 
 ScrollOut({
     targets:"#nav-1",
     onShown() {
         csalad.classList.add("active");
+        foglalat.classList.add("active");
     },
     onHidden() {
         csalad.classList.remove("active");
+        foglalat.classList.remove("active");
     },
     threshold: 0.3,
 });
