@@ -59,11 +59,41 @@ h2{
     margin: 2rem auto;
     padding: 1rem;
     padding-bottom: 1rem;
-    width: 60%;
+    width: 90%;
     
     background-color: rgb(15, 15, 15);
     clip-path: polygon(0 40.00px,40.00px 0,100% 0,100% calc(100% - 40.00px),calc(100% - 40.00px) 100%,0 100%);
 }
 .para > p{ 
     padding-left: 1rem;
+}
+
+.fix_bg{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .5);
+}
+.fix_bg-1 {
+    background-image:url(IMG/cpu_foglalat.avif);
+}
+.fix_bg-2{
+    background-image: url(IMG/cpu_vrm.jpg);
+}
+.fix_bg-3{
+    background-image: url(IMG/ram_slot.avif);
+}
+.fix_bg-6{
+    background-image: url(IMG/pcie-slots.jpg);
+}
+.fix_bg-{
+    background-image: url();
+}
+.fix_bg-{
+    background-image: url();
+}
+.fix_bg-{
+    background-image: url();
 }
