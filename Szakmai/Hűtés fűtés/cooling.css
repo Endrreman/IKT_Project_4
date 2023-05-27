@@ -1,0 +1,18 @@
+/*!       General       */
+nav{
+    height: 2000px;
+}
+/*!       Main       */
+.fix_bg-1{
+    background-image: url(IMG/good_pc.webp);
+    background-size: cover;
+}
+.fix_bg-2{
+    background-image: url(IMG/cpu_passive.jpg);
+}
+.fix_bg-3{
+    background-image: url(IMG/cpu_water_2.jpg);
+}
+.fix_bg-4{
+    background-image: url(img/gpu-cooler.jpg);
+}

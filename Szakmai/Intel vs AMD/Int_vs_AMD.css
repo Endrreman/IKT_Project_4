@@ -1,0 +1,35 @@
+/*!       General       */
+nav{
+    height: 2000px;
+}
+/*!       Main       */
+table{
+    margin-inline: auto;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, .2);
+
+}
+tr{
+    height: 1.5rem;
+    
+}
+
+
+
+
+.logo_img{
+    display: block;
+    margin: auto;
+}
+.fix_bg-1{
+    background-image: url(IMG/intel_cpu.webp);
+}
+.fix_bg-2{
+    background-image: url(IMG/amd-cpu.jpg);
+}
+.fix_bg-3{
+    background-image: url(IMG/intel_vs_amd.jpg);
+}
+.fix_bg-4{
+    background-image: url();
+}
