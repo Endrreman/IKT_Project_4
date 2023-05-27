@@ -83,4 +83,7 @@ footer{
         grid: 100%/repeat(1, 1fr);
         grid-template-rows: 15rem;
     }
+    .foot_grid_div {
+        padding-left: 1rem;
+    }
 }
