@@ -69,7 +69,31 @@ h2{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .5);
+}
+@media screen and (max-width: 1400px){
+    main{
+        float: none;
+    }
+    .para, .intro{
+        width: 100%;
+        float: none;
+    }
+}
+@media screen and (max-width: 900px){
+    .title_h1{
+        font-size: 2rem;
+    }
+    main{
+        width: 95%;
+        margin-inline: 0;
+        margin-left: .6%;
+    }
+    .para, .intro{
+        margin-inline: 0;
+        padding: 0.5rem;
+        margin-bottom: -1rem;
+    }
 }

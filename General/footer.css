@@ -7,7 +7,7 @@ footer{
 
     background-color: rgb(10, 10, 10);
 }
-/*     Grid     */
+/*     Grid*/
 .foot_grid {
     position: relative;
     top: 3rem;
@@ -57,7 +57,7 @@ footer{
     margin: 0;
 }
 
-/*     Col 1     */
+/*     Col 1*/
 .col1{
     clip-path: polygon(0 50.00px,50.00px 0,100% 0,100% 100%,0 100%);
 }
@@ -69,12 +69,10 @@ footer{
     font-family: 'Barlow', sans-serif;
 }
 
-/*     Col 2     */
+/*     Col 2*/
 .col2{
     clip-path: polygon(0 0,100% 0,100% calc(100% - 60.00px),calc(100% - 60.00px) 100%,0 100%);
 }
-
-/*     Col 3     */
 
 /*!       Responsive       */
 @media screen and (max-width: 1100px){

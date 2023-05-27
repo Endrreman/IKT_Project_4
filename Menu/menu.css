@@ -1,6 +1,3 @@
-html, body{
-    height: 110%;
-}
 /*!       Header       */
 .header_title{
     width: 35%;  /* Kisebb nézetnél fejebb kell venni */
@@ -171,11 +168,8 @@ main h2, p{
     }
 }
 @media screen and (max-width: 750px){
-    html, body{
-        height: 150%; /* hogy jólegyen a mátrix */
-    }
     .grid-con {
-        width: 80%;
+        width: 95%;
         grid-gap: 2rem;
         grid-template-columns: 100%;
         grid-template-rows: 20rem 20rem 20rem 20rem;
