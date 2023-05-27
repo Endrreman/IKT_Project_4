@@ -1,88 +1,15 @@
 /*!       General       */
-html{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/*!       Header       */
-h1{
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-}
-.title_h1{
-    display: block;
-    margin: auto;
-    text-align: center;
-    font-size: 4rem;
-
-    background: linear-gradient(45deg, #00aeff, #a68eff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: 100;
-}
-
-/*!       Main       */
-hr{
-    margin-top: -1rem;
-    margin-bottom: 2rem;
-}
-main{
-    width: 75%;
-    float: left;
-    margin: auto;
-    font-family: 'Nunito', sans-serif;
-}
-
-img{
-    width: 20rem;
+nav{
+    height: 3000px;
 }
 h2, h3, h4, h5{
     font-family: 'Barlow', sans-serif;
-}
-h3{
-    padding-left: 1rem;
-}
-h4{
-    padding-left: 1.5rem;
-}
-p{ 
-    padding-inline: 2rem;
-    text-align: justify;
-}
-
-.intro{
-    margin-bottom: 2rem;
-    padding: 1rem 4rem;
-    font-size: 1.2rem;
-
-    background-color: rgb(15, 15, 15);
-    clip-path: polygon(0 0,calc(100% - 60.00px) 0,100% 60.00px,100% 100%,50.00px 100%,0 calc(100% - 50.00px));
-}
-
-.para{
-    margin: 2rem auto;
-    padding: 1rem;
-    padding-bottom: 1rem;
-    width: 90%;
-    
-    background-color: rgb(15, 15, 15);
-    clip-path: polygon(0 40.00px,40.00px 0,100% 0,100% calc(100% - 40.00px),calc(100% - 40.00px) 100%,0 100%);
 }
 .para-2{
     width: 100%;
 }
 
-.fix_bg{
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .5);
-}
+/*!       Main       */
 .fix_bg-1 {
     background-image:url(IMG/neumann_janos_gyerekkora.jpg);
 }
