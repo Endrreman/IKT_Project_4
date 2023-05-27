@@ -25,11 +25,16 @@ nav > div > ul > li{
     font-size: 1.2rem;
     font-weight: bold;
     font-family: 'Barlow', sans-serif;
+
+    transition: color 0.4s;
 }
 .nav_p{
     color: white;
     font-family: 'Barlow', sans-serif;
     margin-left: 2rem;
+}
+.nav_a:hover{
+    color: aqua;
 }
 
 .active{

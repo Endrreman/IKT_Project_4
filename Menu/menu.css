@@ -74,6 +74,7 @@ main h2, p{
     scale: 1.05;
 }
 .click_div{
+    position: relative;
     z-index: 0;
 
     cursor: pointer;
@@ -93,6 +94,11 @@ main h2, p{
 .click_div{
     background-size: cover;
     background-position: center;
+}
+.click_div div{
+    position: absolute;
+    bottom: 1.5rem;
+    padding-inline: 1rem;
 }
 .it1{
     /*clip-path: polygon(0 70.00px,70.00px 0,100% 0,100% 100%,0 100%);*/
@@ -117,6 +123,14 @@ main h2, p{
 }
 
 /*!       Responsive       */
+@media (hover: none) {
+    .click_div{
+        color: white;
+    
+        opacity: 1;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .7);
+    }
+  }
 /*     Header     */
 @media screen and (max-width: 1200px){
     .header_title{
@@ -168,5 +182,8 @@ main h2, p{
     }
     .it2, .it3{
         grid-column: span 1;
+    }
+    .it1, .it2, .it3, .it4{
+        clip-path: polygon(0 0,100% 0,100% 100%,60.00px 100%,0 calc(100% - 60.00px));
     }
 }

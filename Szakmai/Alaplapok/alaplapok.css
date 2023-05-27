@@ -83,16 +83,18 @@ h2{
     background-image: url(IMG/cpu_vrm.jpg);
 }
 .fix_bg-3{
-    background-image: url(IMG/ram_slot.avif);
+    background-image: url(IMG/ram_slot.jpg);
+    box-shadow: none;
 }
 .fix_bg-6{
-    background-image: url(IMG/pcie-slots.jpg);
-}
-.fix_bg-{
     background-image: url();
 }
-.fix_bg-{
-    background-image: url();
+.fix_bg-7{
+    background-image: url(IMG/CMOS-Battery.avif);
+}
+.fix_bg-9{
+    background-image: url(IMG/SATA-connectors.jpeg);
+    background-size: cover;
 }
 .fix_bg-{
     background-image: url();
