@@ -3,6 +3,10 @@ nav{
     height: 2000px;
 }
 /*!       Main       */
+main h3{
+    font-family: 'Barlow', sans-serif;
+}
+
 .fix_bg-1{
     background-image: url(IMG/good_pc.webp);
     background-size: cover;
